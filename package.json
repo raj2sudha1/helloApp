@@ -1,0 +1,12 @@
+{
+  "name": "helloworld",
+  "version": "0.0.0",
+  "description": "Testing start and stop functionality npm",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js HelloApp",
+"stop":"pkill --signal SIGINT HelloApp"
+  },
+  "author": "tester",
+  "license": "MIT"
+}
