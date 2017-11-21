@@ -14,7 +14,7 @@ if [ $LOCAL != $REMOTE ]; then
     #echo "Up-to-date"
 #elif [ $LOCAL = $BASE ]; then
     echo "Update available and downloading..."
-    npm stop && git reset --hard && git clean -dfx && git pull && npm start &
+    npm stop && git reset --hard && git clean -dfx && git pull && npm install && npm start &
     #echo "Need to pull"
 #elif [ $REMOTE = $BASE ]; then
 #   echo "Need to push"
