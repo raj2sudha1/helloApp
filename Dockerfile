@@ -1,9 +1,6 @@
 FROM raj2sudha/node-raspbian:node-base  
 ENTRYPOINT []
 
-
-# RUN apt-get update && apt-get -qy install npm
-# RUN which npm
 RUN mkdir -p /home/pi/learnings/hellotest
 
 ADD ./index.js /home/pi/learnings/hellotest/index.js
