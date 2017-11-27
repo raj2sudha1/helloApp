@@ -1,15 +1,11 @@
 FROM raj2sudha/node-raspbian:node-base  
 ENTRYPOINT []
 
-RUN mkdir -p /home/pi/learnings/hellotest
+RUN mkdir -p /usr/local/learnings/hellotest
 
-ADD ./index.js /home/pi/learnings/hellotest/index.js
-ADD ./package.json /home/pi/learnings/hellotest/package.json
+ADD ./index.js /usr/local/learnings/hellotest/index.js
+ADD ./package.json /usr/local/learnings/hellotest/package.json
 
-WORKDIR /home/pi/learnings/hellotest
+WORKDIR /usr/local/learnings/hellotest
 
 CMD npm start
-
-
-
-
