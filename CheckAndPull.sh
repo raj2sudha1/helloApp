@@ -9,5 +9,6 @@ REMOTE=$(git rev-parse "$UPSTREAM")
 
 if [ $LOCAL != $REMOTE ]; then
    # echo "Update available and downloading..."
-    npm stop && git reset --hard && git clean -dfx && git pull && npm install && npm start &
+   # npm stop && git reset --hard && git clean -dfx && git pull && npm install && npm start &
+   git reset --hard && git clean -dfx && git pull && npm install && npm start &
 fi
